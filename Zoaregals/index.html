@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOAREGALS - Tu Viaje Espiritual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h1>ZOAREGALS</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#mapa">Ubicación</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Somos tu viaje por hacer, tu experiencia por descubrir</h2>
+            <p>Todo lo que imaginaste y no esperabas</p>
+            <p>Un recorrido sensorial a través de los sentidos</p>
+            <div class="hero-cta">
+                <a href="#productos" class="btn-primary">Descubrir</a>
+                <a href="#contacto" class="btn-secondary">Visítanos</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.42.29.png" alt="ZOAREGALS Tienda Espiritual">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Desde 1998</h3>
+                    <p>ZOAREGALS nació en 1998 como un espacio dedicado a la espiritualidad, las energías y la simbología. A lo largo de más de dos décadas, hemos sido un refugio para aquellos que buscan regalos significativos para sus seres queridos.</p>
+                    <p>Nuestro local está diseñado para personas que valoran la conexión espiritual y buscan productos que trascienden lo material. Cada artículo en nuestra tienda está seleccionado con cuidado para ofrecer una experiencia sensorial única.</p>
+                    <p class="namaste">Namaste 🙏</p>
+                </div>
+                <div class="about-image">
+                    <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.43.15.png" alt="Interior ZOAREGALS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="products-intro">
+                <p>Descubre nuestra cuidada selección de productos espirituales, cada uno elegido para aportar armonía, energía y significado a tu vida.</p>
+            </div>
+            
+            <!-- Product Categories -->
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Piedras y Cristales</h3>
+                    <p>Selección de piedras energéticas y cristales para armonizar tu espacio personal.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Incienso y Aromas</h3>
+                    <p>Variedad de inciensos y aromaterapia para purificar y relajar tu ambiente.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3>Símbolos Espirituales</h3>
+                    <p>Objetos simbólicos y amuletos para protección y buena energía.</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Regalos Significativos</h3>
+                    <p>Regalos especiales para familiares y amigos con un profundo significado espiritual.</p>
+                </div>
+            </div>
+
+            <!-- Product Gallery -->
+            <div class="products-gallery">
+                <h3>Galería de Productos</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('imagenes/Captura de Pantalla 2026-02-09 a las 18.52.48.png', 'Nuestra Colección')">
+                        <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.52.48.png" alt="Piedras energéticas y cristales">
+                        <div class="gallery-overlay">
+                            <h4>Nuestra Colección</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('imagenes/Captura de Pantalla 2026-02-09 a las 18.53.09.png', 'Nuestra Colección')">
+                        <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.53.09.png" alt="Variedad de productos espirituales">
+                        <div class="gallery-overlay">
+                            <h4>Nuestra Colección</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('imagenes/Captura de Pantalla 2026-02-09 a las 18.53.33.png', 'Nuestra Colección')">
+                        <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.53.33.png" alt="Productos de aromaterapia">
+                        <div class="gallery-overlay">
+                            <h4>Nuestra Colección</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('imagenes/Captura de Pantalla 2026-02-09 a las 18.53.53.png', 'Nuestra Colección')">
+                        <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.53.53.png" alt="Símbolos y amuletos">
+                        <div class="gallery-overlay">
+                            <h4>Nuestra Colección</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('imagenes/Captura de Pantalla 2026-02-09 a las 18.54.23.png', 'Nuestra Colección')">
+                        <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.54.23.png" alt="Regalos espirituales">
+                        <div class="gallery-overlay">
+                            <h4>Nuestra Colección</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('imagenes/Captura de Pantalla 2026-02-09 a las 18.54.56.png', 'Nuestra Colección')">
+                        <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.54.56.png" alt="Exhibición principal de productos">
+                        <div class="gallery-overlay">
+                            <h4>Nuestra Colección</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <div class="lightbox-content">
+                    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-image" src="" alt="">
+                    <h3 id="lightbox-title"></h3>
+                </div>
+            </div>
+
+            <div class="products-image">
+                <img src="imagenes/Captura de Pantalla 2026-02-09 a las 18.43.41.png" alt="Productos ZOAREGALS">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Visítanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Encuéntranos en nuestro local céntrico</p>
+                            <a href="https://maps.google.com/?q=ZOAREGALS" target="_blank" class="btn-link">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes a Sábado: 10:00 - 20:00</p>
+                            <p>Domingo: 11:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p><a href="tel:932180410" class="btn-link">932 18 04 10</a></p>
+                            <div class="contact-buttons">
+                                <a href="tel:932180410" class="btn-contact btn-call">
+                                    <i class="fas fa-phone"></i>
+                                    Llamar ahora
+                                </a>
+                                <a href="https://wa.me/34932180410" target="_blank" class="btn-contact btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:zoaregals@gmail.com" class="btn-link">zoaregals@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h3>Síguenos en redes sociales</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/zoaregals/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>@zoaregals</span>
+                        </a>
+                        <a href="https://www.facebook.com/zoaregals" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="mapa" class="map-section">
+        <div class="container">
+            <h2>Encuéntranos</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.123456789!2d2.123456789!3d41.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2bcd49aec3f%3A0x644996de88f00e28!2sZOAREGALS!5e0!3m2!1ses!2ses!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <div class="map-details">
+                    <h3>Información de Ubicación</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> ZOAREGALS - Encuéntranos en nuestro local céntrico</p>
+                    <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:932180410">932 18 04 10</a></p>
+                    <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lunes a Sábado: 10:00 - 20:00 | Domingo: 11:00 - 18:00</p>
+                    <div class="map-actions">
+                        <a href="https://maps.google.com/?q=ZOAREGALS" target="_blank" class="btn-primary">
+                            <i class="fas fa-directions"></i>
+                            Cómo llegar
+                        </a>
+                        <a href="https://wa.me/34932180410" target="_blank" class="btn-secondary">
+                            <i class="fab fa-whatsapp"></i>
+                            Contactar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ZOAREGALS</h3>
+                    <p>Tu viaje espiritual desde 1998</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#mapa">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/zoaregals/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/zoaregals" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ZOAREGALS. Todos los derechos reservados.</p>
+                <p>Namaste 🙏</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
